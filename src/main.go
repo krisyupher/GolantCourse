@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"math"
+
+	"rsc.io/quote"
 )
 
 func main() {
@@ -59,6 +61,9 @@ func main() {
 	numeronose, errorPrintln = fmt.Println("uno", "dos", "uno")
 	fmt.Println(numeronose)
 	fmt.Println(errorPrintln)
+
+	fmt.Println("--------------------")
+	fmt.Println(quote.Go())
 
 }
 
