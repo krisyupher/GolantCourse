@@ -7,6 +7,16 @@ import (
 	"rsc.io/quote"
 )
 
+type pc struct {
+	ran   int
+	brand string
+	disk  int
+}
+
+func (lalala pc) String() string {
+	return fmt.Sprintf("pc{ran: %d, brand: %q, disk: %d}", lalala.ran, lalala.brand, lalala.disk)
+}
+
 func main() {
 	//Declaracion de constantes
 	const pi float64 = 3.14
@@ -64,7 +74,13 @@ func main() {
 
 	fmt.Println("--------------------")
 	fmt.Println(quote.Go())
+	fmt.Println("--------------------")
+	myPC := pc{ran: 16, brand: "Asus", disk: 512}
+	fmt.Println(myPC)
 
+	inter()
+	fmt.Println(Hello("Cristian"))
+	testMain()
 }
 
 func areaCirculo(radio float64) float64 {
@@ -73,7 +89,6 @@ func areaCirculo(radio float64) float64 {
 func areaRectangulo(base float64, altura float64) float64 {
 	return base * altura
 }
-
 func areaTrapezoide(B float64, b float64, h float64) float64 {
 	return h * (B + b) / 2
 }

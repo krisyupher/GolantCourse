@@ -9,6 +9,6 @@ func Hello(name string) string {
 	return message
 }
 func testMain() {
-	var greetingRespont = Hello("Gladys")
+	var greetingRespont = Hello("Glad6ys")
 	fmt.Println(Hello(greetingRespont))
 }
